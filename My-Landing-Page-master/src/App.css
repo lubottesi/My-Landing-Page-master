@@ -1,0 +1,576 @@
+.App {
+  text-align: center;
+}
+
+.App-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.tagline {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  font-weight: 100;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.intro {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 2.75em;
+  font-weight: 600;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.change-mode {
+  position: absolute;
+  top: 100px;
+  right: 25px;
+}
+
+.icons-social i {
+  padding: 10px;
+  font-size: 2em;
+}
+
+/* Estilos do Navbar */
+.navbar {
+  background: #2c3e50; /* Cor de fundo */
+  padding: 1rem 2rem;
+  position: fixed; /* Fixa no topo */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #3498db; /* Cor ao passar o mouse */
+}
+
+/* Estilos da Seção About Simplificada */
+.about-section {
+  padding: 6rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-text {
+  width: 100%;
+}
+
+.large-text {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.about-text h2 {
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos da Seção Projects */
+/* Projects Section Styles */
+.projects-section {
+  padding: 5rem 2rem;
+  background: #ffffff;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #7f8c8d;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.project-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 2.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-info h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1.2rem;
+}
+
+.project-description {
+  margin-bottom: 1.5rem;
+}
+
+.project-description p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.project-description ul {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+  color: #555;
+}
+
+.project-description li {
+  margin-bottom: 0.5rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+}
+
+.project-tech span {
+  background: #e1f0ff;
+  color: #2980b9;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.project-link {
+  padding: 0.7rem 1.5rem;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.project-link:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+/* Daylight CSS */
+
+.daylight .App-main {
+  background-color: #282c34;
+  color: white;
+}
+
+.daylight .change-mode:before {
+  color: yellow;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+  content: '\f185';
+}
+
+.daylight .icons-social a {
+  color: #fafafa;
+}
+
+.daylight .icons-social a svg path {
+  fill: #fafafa;
+}
+
+/* Nightlight CSS */
+
+.nightlight .App-main {
+  background-color: #fafafa;
+  color: #000;
+}
+
+.nightlight .change-mode:before {
+  color: black;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+  content: '\f186';
+}
+
+.nightlight .icons-social a {
+  color: #000;
+}
+
+.nightlight .icons-social a svg path {
+  fill: #000;
+}
+
+/* Custom CSS Start From Here */
+
+/* day CSS */
+
+.day .App-main {
+  background-color: #282c34;
+  color: white;
+}
+
+.day .icons-social a {
+  color: #fafafa;
+}
+
+.day .icons-social a svg path {
+  fill: #fafafa;
+}
+
+/* night CSS */
+
+.night .App-main {
+  background-color: #fafafa;
+  color: #000;
+}
+
+.night .icons-social a {
+  color: #000;
+}
+
+.night .icons-social a svg path {
+  fill: #000;
+}
+
+/* Dark Colors CSS */
+
+/* terminal CSS */
+
+.terminal .App-main {
+  background-color: #1565c0;
+  color: #ffeb3b;
+}
+
+.terminal .icons-social a {
+  color: #ffeb3b;
+}
+
+.terminal .icons-social a svg path {
+  fill: #ffeb3b;
+}
+
+/* torquoise CSS */
+
+.torquoise .App-main {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+.torquoise .icons-social a {
+  color: #fff;
+}
+
+.torquoise .icons-social a svg path {
+  fill: #fff;
+}
+
+/* peterriver CSS */
+
+.peterriver .App-main {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.peterriver .icons-social a {
+  color: #fff;
+}
+
+.peterriver .icons-social a svg path {
+  fill: #fff;
+}
+
+/* amythyst CSS */
+
+.amythyst .App-main {
+  background-color: #9b59b6;
+  color: #fff;
+}
+
+.amythyst .icons-social a {
+  color: #fff;
+}
+
+.amythyst .icons-social a svg path {
+  fill: #fff;
+}
+
+/* carrot CSS */
+
+.carrot .App-main {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.carrot .icons-social a {
+  color: #fff;
+}
+
+.carrot .icons-social a svg path {
+  fill: #fff;
+}
+
+/* alizarin CSS */
+
+.alizarin .App-main {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.alizarin .icons-social a {
+  color: #fff;
+}
+
+.alizarin .icons-social a svg path {
+  fill: #fff;
+}
+
+/* Light Colors CSS */
+
+/* lightred CSS */
+
+.lightred .App-main {
+  background-color: #ffcdd2;
+  color: #000;
+}
+
+.lightred .icons-social a {
+  color: #000;
+}
+
+.lightred .icons-social a svg path {
+  fill: #000;
+}
+
+/* lightpurple CSS */
+
+.lightpurple .App-main {
+  background-color: #e1bee7;
+  color: #000;
+}
+
+.lightpurple .icons-social a {
+  color: #000;
+}
+
+.lightpurple .icons-social a svg path {
+  fill: #000;
+}
+
+/* lightgreen CSS */
+
+.lightgreen .App-main {
+  background-color: #c8e6c9;
+  color: #000;
+}
+
+.lightgreen .icons-social a {
+  color: #000;
+}
+
+.lightgreen .icons-social a svg path {
+  fill: #000;
+}
+
+/* lightblue CSS */
+
+.lightblue .App-main {
+  background-color: #b3e5fc;
+  color: #000;
+}
+
+.lightblue .icons-social a {
+  color: #000;
+}
+
+.lightblue .icons-social a svg path {
+  fill: #000;
+}
+
+/* lightyellow CSS */
+
+.lightyellow .App-main {
+  background-color: #fff9c4;
+  color: #000;
+}
+
+.lightyellow .icons-social a {
+  color: #000;
+}
+
+.lightyellow .icons-social a svg path {
+  fill: #000;
+}
+
+/* Gradient background */
+
+.gradient {
+  width: 100wh;
+  height: 100vh;
+  color: #fff;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+.gradient .App-main {
+  color: #fff;
+}
+
+.gradient .icons-social a {
+  color: #fff;
+}
+
+.gradient .icons-social a svg path {
+  fill: #fff;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Full Page Background Image CSS */
+
+.full-bg-image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.full-bg-image .App-main {
+  color: #fff;
+}
+
+.full-bg-image .icons-social a {
+  color: #fff;
+}
+
+.full-bg-image .icons-social a svg path {
+  fill: #fff;
+}
